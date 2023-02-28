@@ -70,7 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				6460DA6729AD1EAD00B59C64 /* Application */,
-				6460DA4C29AD13EB00B59C64 /* MainViewController.swift */,
+				64D78C9E29ADFCA900E34C6F /* Extensions */,
+				64D78C9C29ADFC8F00E34C6F /* Services */,
+				64D78C9D29ADFC9700E34C6F /* Scenes */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -92,6 +94,44 @@
 				6460DA4A29AD13EB00B59C64 /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		64D78C9C29ADFC8F00E34C6F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		64D78C9D29ADFC9700E34C6F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				64D78C9F29ADFCC000E34C6F /* Login */,
+				64D78CA029ADFCC800E34C6F /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		64D78C9E29ADFCA900E34C6F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64D78C9F29ADFCC000E34C6F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6460DA4C29AD13EB00B59C64 /* MainViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		64D78CA029ADFCC800E34C6F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
