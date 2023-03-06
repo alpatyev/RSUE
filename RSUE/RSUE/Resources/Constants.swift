@@ -21,7 +21,7 @@ enum Constants {
     enum Layout {
         static let borderWidth: CGFloat = 1.25
         static let cornerRadius: CGFloat = 8
-        static let indent: CGFloat = 36
-        static let smallIndent: CGFloat = 12
+        static let defaultHeight: CGFloat = 36
+        static let indent: CGFloat = 12
     }
 }
