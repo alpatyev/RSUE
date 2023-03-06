@@ -3,13 +3,7 @@ import RxSwift
 
 // MARK: - Login view model protocol
 
-protocol LoginViewModelProtocol {
-    var textLabel: BehaviorSubject<String> { get }
-    var textField: PublishSubject<String> { get }
-    func increaseTapped()
-    func decreaseTapped()
-    func textFieldReturned(_ text: String)
-}
+protocol LoginViewModelProtocol {}
 
 // MARK: - Login view model
 
@@ -17,46 +11,19 @@ final class LoginViewModel: LoginViewModelProtocol {
     
     // MARK: - Models
     
-    private var model: LoginModel {
-        didSet {
-            textLabel.onNext(model.line)
-        }
-    }
+    private var model = LoginModel()
     
     // MARK: - Public properties
     
-    var textLabel = BehaviorSubject<String>(value: "type something")
-    var textField = PublishSubject<String>()
-    
     // MARK: - Private properties
-    
-    private let bag = DisposeBag()
-    
+        
     // MARK: - Common Init
     
-    init() {
-        model = LoginModel()
-    }
+    init() {}
     
     // MARK: - Setups
-    
-    private func setupRx() {}
-    
+        
     // MARK: - Public methods
-    
-    func increaseTapped() {
-        model.count += 1
-    }
-    
-    func decreaseTapped() {
-        if model.count > 0 {
-            model.count -= 1
-        }
-    }
-    
-    func textFieldReturned(_ text: String) {
-        model.textField = text
-    }
     
     // MARK: - Private methods
     
